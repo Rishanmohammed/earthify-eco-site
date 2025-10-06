@@ -1,30 +1,54 @@
-import { Recycle, TrendingUp, Clipboard, GraduationCap } from "lucide-react";
+import { Monitor, Package, Apple, Shirt, AlertTriangle, Wrench, Shield, Recycle, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
-      icon: Recycle,
-      title: "Recycling Programs",
-      description: "Comprehensive recycling solutions tailored to your organization's needs. We implement efficient sorting, collection, and processing systems.",
+      icon: Monitor,
+      title: "IT & E-Waste Disposal",
+      description: "Secure and sustainable recycling of electronics and data-bearing devices with complete live recording of destruction process and sharing.",
       color: "bg-primary/10"
     },
     {
-      icon: TrendingUp,
-      title: "Sustainability Consulting",
-      description: "Expert guidance to help your business achieve sustainability goals. From carbon footprint reduction to green certifications.",
+      icon: Package,
+      title: "FMCG & Cosmetics Disposal/Destruction",
+      description: "Safe destruction of expired or damaged consumer goods and personal care products. Destruction process complete live recording and sharing.",
       color: "bg-accent/10"
     },
     {
-      icon: Clipboard,
-      title: "Waste Management Planning",
-      description: "Strategic waste management solutions that reduce costs and environmental impact. Audit, plan, and optimize your waste systems.",
+      icon: Apple,
+      title: "Expired and Packed Food Disposal",
+      description: "Environmentally compliant disposal of expired or unsellable food items with as client request live recording of destruction process.",
       color: "bg-primary-light/10"
     },
     {
-      icon: GraduationCap,
-      title: "Corporate Training",
-      description: "Educational workshops and training programs to empower your team with sustainability knowledge and best practices.",
+      icon: Shirt,
+      title: "Fashion & Apparel Destruction",
+      description: "Brand-protected destruction of apparel, footwear, and accessories with complete documentation.",
+      color: "bg-secondary/30"
+    },
+    {
+      icon: AlertTriangle,
+      title: "Hazardous Waste Disposal Support",
+      description: "Expert coordination for safe management of chemical and industrial waste in full compliance with UAE regulations.",
+      color: "bg-primary/10"
+    },
+    {
+      icon: Wrench,
+      title: "Lubricant & Spare Parts Destruction",
+      description: "Responsible handling and destruction of oils, lubricants, and automotive materials with certified processes.",
+      color: "bg-accent/10"
+    },
+    {
+      icon: Shield,
+      title: "Brand Protection & Confidential Disposal",
+      description: "Ensuring sensitive materials and branded items are irreversibly destroyed with full confidentiality and compliance.",
+      color: "bg-primary-light/10"
+    },
+    {
+      icon: Recycle,
+      title: "Specialized Waste Disposal",
+      description: "Custom disposal solutions for unique or regulated waste streams tailored to your specific requirements.",
       color: "bg-secondary/30"
     }
   ];
@@ -43,7 +67,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
